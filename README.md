@@ -1,3 +1,9 @@
+# TabbedEditPage
+
+This plugin enables the Movable Type to serialize by Data::MessagePack.
+
+## LICENSE
+
 Copyright (c) 2014 Taku AMANO.
 
 Permission is hereby granted, free of charge, to any person obtaining

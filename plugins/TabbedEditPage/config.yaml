@@ -4,11 +4,10 @@ name: TabbedEditPage
 version: 0.1.3
 
 #about this plugin
-description: <__trans phrase="Create tabbed edit page.">
-author_name: <__trans phrase="toi-planning">
-author_link: http://tec.toi-planning.net/
-plugin_link: http://tec.toi-planning.net/mt/tabbededitpage/
-doc_link: http://tec.toi-planning.net/mt/tabbededitpage/manual
+description: <__trans phrase="Make a tabbed editing screen.">
+author_name: Taku AMANO
+author_link: http://taaas.jp
+plugin_link: https://github.com/usualoma/mt-plugin-TabbedEditPage/
 
 #Localization
 l10n_class: TabbedEditPage::L10N

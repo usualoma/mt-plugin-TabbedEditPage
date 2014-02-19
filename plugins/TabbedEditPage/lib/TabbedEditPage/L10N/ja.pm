@@ -6,7 +6,7 @@ use vars qw( %Lexicon );
 
 %Lexicon = (
 	'toi-planning' => 'ToI企画',
-	'Create tabbed edit page.' => '編集ページをタブ化します',
+	'Make a tabbed editing screen.' => '編集ページをタブ化します',
 	'Updated' => '設定を更新しました',
 	'Disabled' => '利用しない',
 	'Enabled' => '利用する',
