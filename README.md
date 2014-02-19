@@ -2,7 +2,7 @@
 
 This plugin makes a tabbed editing screen.
 
-![Screenshot](https://github.com/usualoma/mt-plugin-TabbedEditPage/raw/master/artwork/screenshot.png)
+![Screenshot](https://raw.github.com/usualoma/mt-plugin-TabbedEditPage/master/artwork/screenshot.png)
 
 ## Installation
 
