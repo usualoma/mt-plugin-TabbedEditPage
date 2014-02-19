@@ -6,34 +6,30 @@
 	var $tabs = $('<ul id="tabbed_edit_page_tabs" />');
 	var $mainContent = $('#main-content');
 	var $container = $('#title-field').parent();
+	$container.css('visibility', 'hidden');
 
 	var $allFields = $('#main-content .field');
 	var $initialTab = null;
+	var $field;
 	$(settings).each(function(i, tab) {
 		var $a = $('<a href="#">' + tab.label + '</a>');
 		$a.on('click', function(ev) {
 			ev.preventDefault();
 			ev.stopPropagation();
 
-			$allFields.filter(':not(#text-field)').hide();
-			$('#editor').hide();
-			$('#editor-content').
-				css('height', '0px').
-				css('width', '0px').
-				css('visibility', 'hidden');
-			$('#text-field').css('margin-bottom', '0');
+			$allFields.css({
+				height: '0',
+				width: '0',
+				visibility: 'hidden',
+				'margin-bottom': '0'
+			});
 			$(tab.fields).each(function(j, f) {
-				if (f == 'text') {
-					$('#editor').show();
-					$('#editor-content')
-						.css('height', '')
-						.css('width', '')
-						.css('visibility', 'visible');
-					$('#text-field').css('margin-bottom', '');
-				}
-				else {
-					$('#' + f + '-field').show();
-				}
+				$('#' + f + '-field').css({
+					height: '',
+					width: '',
+					visibility: 'visible',
+					'margin-bottom': ''
+				});
 			});
 
 			$tabs.find('a').removeClass('active');
@@ -45,7 +41,10 @@
 		}
 
 		for (var j = tab.fields.length-1; j >= 0; j--) {
-			$container.after($('#' + tab.fields[j] + '-field').removeClass('hidden'));
+			$field = $('#' + tab.fields[j] + '-field');
+			$field.removeClass('hidden');
+			$field.find('.field-header').css({cursor: 'default'});
+			$container.after($field);
 		}
 	});
 	if (settings.length < 2) {
@@ -56,6 +55,7 @@
 		$mainContent.prepend('<br clear="both" />');
 		$mainContent.prepend($tabs);
 		$initialTab.triggerHandler('click');
+		$container.css('visibility', 'visible');
 	});
 })(jQuery);
 </script>
