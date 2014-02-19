@@ -3,10 +3,12 @@
 	clear: both;
 	width: 100%;
 	border-bottom: 2px solid #333;
+	margin-bottom: 15px;
 }
 #tabbed_edit_page_tabs li {
 	font-size: 14px;
 	float: left;
+	margin-bottom: 0;
 }
 #tabbed_edit_page_tabs li a {
 	display: block;
@@ -17,7 +19,7 @@
 	background: #626262;
 	color: white;
 }
-#tabbed_edit_page_tabs li.last a {
+#tabbed_edit_page_tabs li.last-child a {
 	border-width: 0px;
 }
 #tabbed_edit_page_tabs li a.active,
