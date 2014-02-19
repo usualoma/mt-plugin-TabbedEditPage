@@ -1,6 +1,22 @@
 # TabbedEditPage
 
-This plugin enables the Movable Type to serialize by Data::MessagePack.
+This plugin makes a tabbed editing screen.
+
+![Screenshot](https://github.com/usualoma/mt-plugin-TabbedEditPage/raw/master/artwork/screenshot.png)
+
+## Installation
+
+1. Unpack the `TabbedEditPage` archive.
+2. Upload the contents to the MT `plugins` directory.
+
+Should look like this when installed:
+
+    $MT_HOME/
+        plugins/
+            TabbedEditPage/
+        mt-static/
+            plugins/
+                TabbedEditPage/
 
 ## LICENSE
 
