@@ -1,7 +1,7 @@
 #plugin information
 id: TabbedEditPage
 name: TabbedEditPage
-version: 0.2
+version: 0.21
 
 #about this plugin
 description: <__trans phrase="Make a tabbed editing screen.">
