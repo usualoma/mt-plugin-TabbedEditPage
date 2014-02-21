@@ -17,11 +17,11 @@
     </div>
 </mt:setvarblock>
 <mt:setvarblock name="html_head" append="1">
-<link rel="stylesheet" href="<mt:Var name="static_uri">plugins/TabbedEditPage/css/settings.css" type="text/css" media="screen,print" />
+<link rel="stylesheet" href="<mt:Var name="static_uri" />plugins/TabbedEditPage/css/settings.css" type="text/css" media="screen,print" />
 </mt:setvarblock>
 <$mt:include name="include/header.tmpl"$>
 <div id="tep_action_bar">
-<form action="<mt:CGIPath /><mt:AdminScript />" method="post" id="tep_form">
+<form action="<mt:Var name="mt_url" />" method="post" id="tep_form">
 <input type="hidden" name="__mode" value="tabbed_edit_page_update" />
 <input type="hidden" name="_type" value="<mt:Var name="obj_type" />" />
 <input type="hidden" name="blog_id" value="<mt:BlogID />" />
@@ -79,7 +79,7 @@
 </div>
 
 <div id="tep_action_bar_bottom">
-<form action="<mt:CGIPath /><mt:AdminScript />" method="post" id="tep_form_copy">
+<form action="<mt:Var name="mt_url" />" method="post" id="tep_form_copy">
 <input type="hidden" name="__mode" value="tabbed_edit_page_copy" />
 <input type="hidden" name="_type" value="<mt:Var name="obj_type" />" />
 <input type="hidden" name="blog_id" value="<mt:BlogID />" />
@@ -99,7 +99,7 @@
 </form>
 </div>
 
-<script type="text/javascript" src="<mt:StaticWebPath />plugins/TabbedEditPage/js/jquery.json.min.js">
+<script type="text/javascript" src="<mt:Var name="static_uri" />plugins/TabbedEditPage/js/jquery.json.min.js">
 </script>
 <script type="text/javascript">
 jQuery(function() {
